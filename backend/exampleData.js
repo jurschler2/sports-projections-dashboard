@@ -10521,4 +10521,4 @@ let exampleResponseH2H = {
   ]
 }
 
-export { exampleResponseH2H, exampleResponseTotals, exampleResponseSpreads }
+export { exampleResponseH2H, exampleResponseTotals, exampleResponseSpreads };

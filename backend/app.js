@@ -1,36 +1,38 @@
-import { exampleResponseH2H, exampleResponseSpreads, exampleResponseSpreads } from "./exampleData"
+/** Sports Projections Dashboard Backend */
 
-let gameNo = 1;
+const express = require("express");
+const morgan = require("morgan");
+const cors = require("cors");
+const oddsRoutes = require("./routes/odds");
 
-exampleResponseH2H.data.forEach(game => {
-  console.log(`Game ${gameNo}: Home: ${game.teams[0]} Away: ${game.teams[1]}`)
-  for (let i = 0; i < game.sites.length; i++) {
-    if (game.sites[i].site_key === "bovada") {
-      console.log(`Game ${gameNo}: Home: ${game.sites[i].odds.h2h[0]} Away: ${game.sites[i].odds.h2h[1]}`)
-      break;
-    }
-  }
-  gameNo += 1;
+const app = express();
+
+app.use(morgan("tiny"));
+app.use(express.json());
+let corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200,
+}
+app.use(cors(corsOptions));
+
+app.use(oddsRoutes);
+
+/** 404 Not Found Error Handler */
+
+app.use(function (req, res, next) {
+  const err = new Error("Not Found");
+  err.status = 404;
+  next(err);
 });
 
-exampleResponseSpreads.data.forEach(game => {
-  console.log(`Game ${gameNo}: Home: ${game.teams[0]} Away: ${game.teams[1]}`)
-  for (let i = 0; i < game.sites.length; i++) {
-    if (game.sites[i].site_key === "bovada") {
-      console.log(`Game ${gameNo}: Home: ${game.sites[i].odds.spreads.points[0]} Away: ${game.sites[i].odds.spreads.points[1]}`)
-      break;
-    }
-  }
-  gameNo += 1;
+/** Generic Error Handler */
+
+app.use(function (err, req, res, next) {
+  if (err.stack) console.error(err.stack);
+
+  res.status(err.status || 500).json({
+    message: err.message,
+  });
 });
 
-exampleResponseTotals.data.forEach(game => {
-  console.log(`Game ${gameNo}: Home: ${game.teams[0]} Away: ${game.teams[1]}`)
-  for (let i = 0; i < game.sites.length; i++) {
-    if (game.sites[i].site_key === "bovada") {
-      console.log(`Game ${gameNo}: Over/Under: ${game.sites[i].odds.totals.points[0]}`)
-      break;
-    }
-  }
-  gameNo += 1;
-});
+module.exports = app;
