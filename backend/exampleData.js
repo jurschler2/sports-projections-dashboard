@@ -3529,7 +3529,7 @@ let exampleResponseSpreads = {
       "sites_count": 15
     }
   ]
-}
+};
 
 let exampleResponseTotals = {
   "success": true,
@@ -7783,7 +7783,7 @@ let exampleResponseTotals = {
       "sites_count": 15
     }
   ]
-}
+};
 
 let exampleResponseH2H = {
   "success": true,
@@ -10519,6 +10519,752 @@ let exampleResponseH2H = {
       "sites_count": 17
     }
   ]
-}
+};
 
-export { exampleResponseH2H, exampleResponseTotals, exampleResponseSpreads };
+// const NFL_SCHEDULE_2020 = [
+//   {
+//     "label": "Preseason",
+//     "value": "1",
+//     "startDate": "2020-08-05T07:00Z",
+//     "endDate": "2020-09-09T06:59Z",
+//     "entries": [
+//       {
+//         "label": "Hall of Fame Weekend",
+//         "alternateLabel": "HOF",
+//         "detail": "Aug 5-11",
+//         "value": "1",
+//         "startDate": "2020-08-05T07:00Z",
+//         "endDate": "2020-08-12T06:59Z"
+//       },
+//       {
+//         "label": "Preseason Week 1",
+//         "alternateLabel": "Pre Wk 1",
+//         "detail": "Aug 12-18",
+//         "value": "2",
+//         "startDate": "2020-08-12T07:00Z",
+//         "endDate": "2020-08-19T06:59Z"
+//       },
+//       {
+//         "label": "Preseason Week 2",
+//         "alternateLabel": "Pre Wk 2",
+//         "detail": "Aug 19-25",
+//         "value": "3",
+//         "startDate": "2020-08-19T07:00Z",
+//         "endDate": "2020-08-26T06:59Z"
+//       },
+//       {
+//         "label": "Preseason Week 3",
+//         "alternateLabel": "Pre Wk 3",
+//         "detail": "Aug 26-Sep 1",
+//         "value": "4",
+//         "startDate": "2020-08-26T07:00Z",
+//         "endDate": "2020-09-02T06:59Z"
+//       },
+//       {
+//         "label": "Preseason Week 4",
+//         "alternateLabel": "Pre Wk 4",
+//         "detail": "Sep 2-8",
+//         "value": "5",
+//         "startDate": "2020-09-02T07:00Z",
+//         "endDate": "2020-09-09T06:59Z"
+//       }
+//     ]
+//   },
+//   {
+//     "label": "Regular Season",
+//     "value": "2",
+//     "startDate": "2020-09-09T07:00Z",
+//     "endDate": "2021-01-06T07:59Z",
+//     "entries": [
+//       {
+//         "label": "Week 1",
+//         "alternateLabel": "Week 1",
+//         "detail": "Sep 9-15",
+//         "value": "1",
+//         "startDate": "2020-09-09T07:00Z",
+//         "endDate": "2020-09-16T06:59Z"
+//       },
+//       {
+//         "label": "Week 2",
+//         "alternateLabel": "Week 2",
+//         "detail": "Sep 16-22",
+//         "value": "2",
+//         "startDate": "2020-09-16T07:00Z",
+//         "endDate": "2020-09-23T06:59Z"
+//       },
+//       {
+//         "label": "Week 3",
+//         "alternateLabel": "Week 3",
+//         "detail": "Sep 23-29",
+//         "value": "3",
+//         "startDate": "2020-09-23T07:00Z",
+//         "endDate": "2020-09-30T06:59Z"
+//       },
+//       {
+//         "label": "Week 4",
+//         "alternateLabel": "Week 4",
+//         "detail": "Sep 30-Oct 6",
+//         "value": "4",
+//         "startDate": "2020-09-30T07:00Z",
+//         "endDate": "2020-10-07T06:59Z"
+//       },
+//       {
+//         "label": "Week 5",
+//         "alternateLabel": "Week 5",
+//         "detail": "Oct 7-13",
+//         "value": "5",
+//         "startDate": "2020-10-07T07:00Z",
+//         "endDate": "2020-10-14T06:59Z"
+//       },
+//       {
+//         "label": "Week 6",
+//         "alternateLabel": "Week 6",
+//         "detail": "Oct 14-20",
+//         "value": "6",
+//         "startDate": "2020-10-14T07:00Z",
+//         "endDate": "2020-10-21T06:59Z"
+//       },
+//       {
+//         "label": "Week 7",
+//         "alternateLabel": "Week 7",
+//         "detail": "Oct 21-27",
+//         "value": "7",
+//         "startDate": "2020-10-21T07:00Z",
+//         "endDate": "2020-10-28T06:59Z"
+//       },
+//       {
+//         "label": "Week 8",
+//         "alternateLabel": "Week 8",
+//         "detail": "Oct 28-Nov 3",
+//         "value": "8",
+//         "startDate": "2020-10-28T07:00Z",
+//         "endDate": "2020-11-04T07:59Z"
+//       },
+//       {
+//         "label": "Week 9",
+//         "alternateLabel": "Week 9",
+//         "detail": "Nov 4-10",
+//         "value": "9",
+//         "startDate": "2020-11-04T08:00Z",
+//         "endDate": "2020-11-11T07:59Z"
+//       },
+//       {
+//         "label": "Week 10",
+//         "alternateLabel": "Week 10",
+//         "detail": "Nov 11-17",
+//         "value": "10",
+//         "startDate": "2020-11-11T08:00Z",
+//         "endDate": "2020-11-18T07:59Z"
+//       },
+//       {
+//         "label": "Week 11",
+//         "alternateLabel": "Week 11",
+//         "detail": "Nov 18-24",
+//         "value": "11",
+//         "startDate": "2020-11-18T08:00Z",
+//         "endDate": "2020-11-25T07:59Z"
+//       },
+//       {
+//         "label": "Week 12",
+//         "alternateLabel": "Week 12",
+//         "detail": "Nov 25-Dec 2",
+//         "value": "12",
+//         "startDate": "2020-11-25T08:00Z",
+//         "endDate": "2020-12-03T07:59Z"
+//       },
+//       {
+//         "label": "Week 13",
+//         "alternateLabel": "Week 13",
+//         "detail": "Dec 3-8",
+//         "value": "13",
+//         "startDate": "2020-12-03T08:00Z",
+//         "endDate": "2020-12-09T07:59Z"
+//       },
+//       {
+//         "label": "Week 14",
+//         "alternateLabel": "Week 14",
+//         "detail": "Dec 9-15",
+//         "value": "14",
+//         "startDate": "2020-12-09T08:00Z",
+//         "endDate": "2020-12-16T07:59Z"
+//       },
+//       {
+//         "label": "Week 15",
+//         "alternateLabel": "Week 15",
+//         "detail": "Dec 16-22",
+//         "value": "15",
+//         "startDate": "2020-12-16T08:00Z",
+//         "endDate": "2020-12-23T07:59Z"
+//       },
+//       {
+//         "label": "Week 16",
+//         "alternateLabel": "Week 16",
+//         "detail": "Dec 23-29",
+//         "value": "16",
+//         "startDate": "2020-12-23T08:00Z",
+//         "endDate": "2020-12-30T07:59Z"
+//       },
+//       {
+//         "label": "Week 17",
+//         "alternateLabel": "Week 17",
+//         "detail": "Dec 30-Jan 5",
+//         "value": "17",
+//         "startDate": "2020-12-30T08:00Z",
+//         "endDate": "2021-01-06T07:59Z"
+//       }
+//     ]
+//   },
+//   {
+//     "label": "Postseason",
+//     "value": "3",
+//     "startDate": "2021-01-06T08:00Z",
+//     "endDate": "2021-02-10T07:59Z",
+//     "entries": [
+//       {
+//         "label": "Wild Card",
+//         "alternateLabel": "Wild Card",
+//         "detail": "Jan 6-12",
+//         "value": "1",
+//         "startDate": "2021-01-06T08:00Z",
+//         "endDate": "2021-01-13T07:59Z"
+//       },
+//       {
+//         "label": "Divisional Round",
+//         "alternateLabel": "Div Rd",
+//         "detail": "Jan 13-19",
+//         "value": "2",
+//         "startDate": "2021-01-13T08:00Z",
+//         "endDate": "2021-01-20T07:59Z"
+//       },
+//       {
+//         "label": "Conference Championship",
+//         "alternateLabel": "Conf Champ",
+//         "detail": "Jan 20-26",
+//         "value": "3",
+//         "startDate": "2021-01-20T08:00Z",
+//         "endDate": "2021-01-27T07:59Z"
+//       },
+//       {
+//         "label": "Pro Bowl",
+//         "alternateLabel": "Pro Bowl",
+//         "detail": "Jan 27-Feb 2",
+//         "value": "4",
+//         "startDate": "2021-01-27T08:00Z",
+//         "endDate": "2021-02-03T07:59Z"
+//       },
+//       {
+//         "label": "Super Bowl",
+//         "alternateLabel": "Super Bowl",
+//         "detail": "Feb 3-9",
+//         "value": "5",
+//         "startDate": "2021-02-03T08:00Z",
+//         "endDate": "2021-02-10T07:59Z"
+//       }
+//     ]
+//   },
+//   {
+//     "label": "Off Season",
+//     "value": "4",
+//     "startDate": "2021-02-10T08:00Z",
+//     "endDate": "2021-08-01T06:59Z",
+//     "entries": [
+//       {
+//         "label": "Week 1",
+//         "alternateLabel": "Week 1",
+//         "detail": "Feb 10-Jul 31",
+//         "value": "1",
+//         "startDate": "2021-02-10T08:00Z",
+//         "endDate": "2021-08-01T06:59Z"
+//       }
+//     ]
+//   }
+// ];
+
+// NFL_SCHEDULE_2020.forEach(timeFrame => {
+//   timeFrame.startDate = timeFrame.startDate.slice(0,10);
+//   timeFrame.endDate = timeFrame.endDate.slice(0,10);
+//   for (let entry in timeFrame.entries) {
+//     entry.startDate = entry.startDate.slice(0,10);
+//     entry.endDate = entry.endDate.slice(0,10);
+//   }
+// })
+
+const EXAMPLE_FRONTEND_RESPONSE = {
+  "games": {
+    "2020-12-18Las Vegas RaidersLos Angeles Chargers": {
+      "gameTime": "2020-12-18",
+      "home": "Las Vegas Raiders",
+      "away": "Los Angeles Chargers",
+      "h2h": {
+        "odds": [
+          -200,
+          170
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -105,
+          -115
+        ],
+        "points": [
+          "-3.5",
+          "3.5"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          53,
+          53
+        ]
+      }
+    },
+    "2020-12-19Buffalo BillsDenver Broncos": {
+      "gameTime": "2020-12-19",
+      "home": "Buffalo Bills",
+      "away": "Denver Broncos",
+      "h2h": {
+        "odds": [
+          -300,
+          250
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -105,
+          -115
+        ],
+        "points": [
+          "-7.0",
+          "7.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          50,
+          50
+        ]
+      }
+    },
+    "2020-12-20Carolina PanthersGreen Bay Packers": {
+      "gameTime": "2020-12-20",
+      "home": "Carolina Panthers",
+      "away": "Green Bay Packers",
+      "h2h": {
+        "odds": [
+          320,
+          -441
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -115,
+          -105
+        ],
+        "points": [
+          "9.0",
+          "-9.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          51.5,
+          51.5
+        ]
+      }
+    },
+    "2020-12-20Baltimore RavensJacksonville Jaguars": {
+      "gameTime": "2020-12-20",
+      "home": "Baltimore Ravens",
+      "away": "Jacksonville Jaguars",
+      "h2h": {
+        "odds": [
+          -1000,
+          600
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          "-13.5",
+          "13.5"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          47.5,
+          47.5
+        ]
+      }
+    },
+    "2020-12-20Detroit LionsTennessee Titans": {
+      "gameTime": "2020-12-20",
+      "home": "Detroit Lions",
+      "away": "Tennessee Titans",
+      "h2h": {},
+      "spreads": {},
+      "totals": {}
+    },
+    "2020-12-20Atlanta FalconsTampa Bay Buccaneers": {
+      "gameTime": "2020-12-20",
+      "home": "Atlanta Falcons",
+      "away": "Tampa Bay Buccaneers",
+      "h2h": {
+        "odds": [
+          215,
+          -260
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          "6.0",
+          "-6.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          50.5,
+          50.5
+        ]
+      }
+    },
+    "2020-12-20Chicago BearsMinnesota Vikings": {
+      "gameTime": "2020-12-20",
+      "home": "Chicago Bears",
+      "away": "Minnesota Vikings",
+      "h2h": {
+        "odds": [
+          160,
+          -180
+        ]
+      },
+      "spreads": {
+        "odds": [
+          105,
+          -125
+        ],
+        "points": [
+          "3.0",
+          "-3.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          47,
+          47
+        ]
+      }
+    },
+    "2020-12-20Miami DolphinsNew England Patriots": {
+      "gameTime": "2020-12-20",
+      "home": "Miami Dolphins",
+      "away": "New England Patriots",
+      "h2h": {
+        "odds": [
+          -140,
+          120
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -115,
+          -105
+        ],
+        "points": [
+          "-2.5",
+          "2.5"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -105,
+          -115
+        ],
+        "points": [
+          41.5,
+          41.5
+        ]
+      }
+    },
+    "2020-12-20Dallas CowboysSan Francisco 49ers": {
+      "gameTime": "2020-12-20",
+      "home": "Dallas Cowboys",
+      "away": "San Francisco 49ers",
+      "h2h": {
+        "odds": [
+          140,
+          -160
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          "3.0",
+          "-3.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          45,
+          45
+        ]
+      }
+    },
+    "2020-12-20Houston TexansIndianapolis Colts": {
+      "gameTime": "2020-12-20",
+      "home": "Houston Texans",
+      "away": "Indianapolis Colts",
+      "h2h": {
+        "odds": [
+          275,
+          -350
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -105,
+          -115
+        ],
+        "points": [
+          "7.0",
+          "-7.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          51,
+          51
+        ]
+      }
+    },
+    "2020-12-20Seattle SeahawksWashington Football Team": {
+      "gameTime": "2020-12-20",
+      "home": "Seattle Seahawks",
+      "away": "Washington Football Team",
+      "h2h": {
+        "odds": [
+          -250,
+          210
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          "-6.0",
+          "6.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          44.5,
+          44.5
+        ]
+      }
+    },
+    "2020-12-20Los Angeles RamsNew York Jets": {
+      "gameTime": "2020-12-20",
+      "home": "Los Angeles Rams",
+      "away": "New York Jets",
+      "h2h": {
+        "odds": [
+          -1887,
+          900
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          "-17.0",
+          "17.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -105,
+          -115
+        ],
+        "points": [
+          44,
+          44
+        ]
+      }
+    },
+    "2020-12-20Arizona CardinalsPhiladelphia Eagles": {
+      "gameTime": "2020-12-20",
+      "home": "Arizona Cardinals",
+      "away": "Philadelphia Eagles",
+      "h2h": {
+        "odds": [
+          -275,
+          225
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -115,
+          -105
+        ],
+        "points": [
+          "-6.0",
+          "6.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          49,
+          49
+        ]
+      }
+    },
+    "2020-12-20Kansas City ChiefsNew Orleans Saints": {
+      "gameTime": "2020-12-20",
+      "home": "Kansas City Chiefs",
+      "away": "New Orleans Saints",
+      "h2h": {
+        "odds": [
+          -170,
+          150
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -120,
+          100
+        ],
+        "points": [
+          "-3.0",
+          "3.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          51.5,
+          51.5
+        ]
+      }
+    },
+    "2020-12-21Cleveland BrownsNew York Giants": {
+      "gameTime": "2020-12-21",
+      "home": "Cleveland Browns",
+      "away": "New York Giants",
+      "h2h": {
+        "odds": [
+          -200,
+          170
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          "-4.0",
+          "4.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          45.5,
+          45.5
+        ]
+      }
+    },
+    "2020-12-22Cincinnati BengalsPittsburgh Steelers": {
+      "gameTime": "2020-12-22",
+      "home": "Cincinnati Bengals",
+      "away": "Pittsburgh Steelers",
+      "h2h": {
+        "odds": [
+          500,
+          -800
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -120,
+          100
+        ],
+        "points": [
+          "13.0",
+          "-13.0"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          40.5,
+          40.5
+        ]
+      }
+    }
+  }
+};
+
+module.exports = EXAMPLE_FRONTEND_RESPONSE;

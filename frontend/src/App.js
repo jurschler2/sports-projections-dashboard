@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import { BrowserRouter } from 'react-router-dom';
+import rootReducer from "./reducer/rootReducer";
+import thunk from "redux-thunk";
+import Routes from './components/Routes';
+
+const STORE = createStore(
+  rootReducer,
+  compose(
+    applyMiddleware(thunk)
+    // window.__REDUX_DEVTOOLS_EXTENSION__
+    //     ? window.__REDUX_DEVTOOLS_EXTENSION__()
+    //     : f => f
+  )
+);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={STORE}>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    </Provider>  
+  </div>
   );
 }
 
