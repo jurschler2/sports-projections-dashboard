@@ -10797,14 +10797,14 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "Los Angeles Chargers",
       "h2h": {
         "odds": [
-          -200,
-          170
+          -175,
+          155
         ]
       },
       "spreads": {
         "odds": [
-          -105,
-          -115
+          100,
+          -120
         ],
         "points": [
           "-3.5",
@@ -10828,14 +10828,14 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "Denver Broncos",
       "h2h": {
         "odds": [
-          -300,
-          250
+          -290,
+          240
         ]
       },
       "spreads": {
         "odds": [
-          -105,
-          -115
+          100,
+          -120
         ],
         "points": [
           "-7.0",
@@ -10859,18 +10859,18 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "Green Bay Packers",
       "h2h": {
         "odds": [
-          320,
-          -441
+          325,
+          -450
         ]
       },
       "spreads": {
         "odds": [
-          -115,
-          -105
+          -105,
+          -115
         ],
         "points": [
-          "9.0",
-          "-9.0"
+          "8.5",
+          "-8.5"
         ]
       },
       "totals": {
@@ -10900,8 +10900,8 @@ const EXAMPLE_FRONTEND_RESPONSE = {
           -110
         ],
         "points": [
-          "-13.5",
-          "13.5"
+          "-13.0",
+          "13.0"
         ]
       },
       "totals": {
@@ -10919,9 +10919,32 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "gameTime": "2020-12-20",
       "home": "Detroit Lions",
       "away": "Tennessee Titans",
-      "h2h": {},
-      "spreads": {},
-      "totals": {}
+      "h2h": {
+        "odds": [
+          425,
+          -650
+        ]
+      },
+      "spreads": {
+        "odds": [
+          -105,
+          -115
+        ],
+        "points": [
+          "10.5",
+          "-10.5"
+        ]
+      },
+      "totals": {
+        "odds": [
+          -110,
+          -110
+        ],
+        "points": [
+          51.5,
+          51.5
+        ]
+      }
     },
     "2020-12-20Atlanta FalconsTampa Bay Buccaneers": {
       "gameTime": "2020-12-20",
@@ -10960,8 +10983,8 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "Minnesota Vikings",
       "h2h": {
         "odds": [
-          160,
-          -180
+          155,
+          -175
         ]
       },
       "spreads": {
@@ -10991,24 +11014,24 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "New England Patriots",
       "h2h": {
         "odds": [
-          -140,
-          120
+          -130,
+          110
         ]
       },
       "spreads": {
         "odds": [
-          -115,
-          -105
+          -110,
+          -110
         ],
         "points": [
-          "-2.5",
-          "2.5"
+          "-2.0",
+          "2.0"
         ]
       },
       "totals": {
         "odds": [
-          -105,
-          -115
+          -110,
+          -110
         ],
         "points": [
           41.5,
@@ -11053,8 +11076,8 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "Indianapolis Colts",
       "h2h": {
         "odds": [
-          275,
-          -350
+          270,
+          -340
         ]
       },
       "spreads": {
@@ -11084,14 +11107,14 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "Washington Football Team",
       "h2h": {
         "odds": [
-          -250,
-          210
+          -240,
+          200
         ]
       },
       "spreads": {
         "odds": [
-          -110,
-          -110
+          -105,
+          -115
         ],
         "points": [
           "-6.0",
@@ -11115,14 +11138,14 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "New York Jets",
       "h2h": {
         "odds": [
-          -1887,
-          900
+          -2000,
+          950
         ]
       },
       "spreads": {
         "odds": [
-          -110,
-          -110
+          -115,
+          -105
         ],
         "points": [
           "-17.0",
@@ -11152,8 +11175,8 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       },
       "spreads": {
         "odds": [
-          -115,
-          -105
+          -120,
+          100
         ],
         "points": [
           "-6.0",
@@ -11206,32 +11229,9 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "gameTime": "2020-12-21",
       "home": "Cleveland Browns",
       "away": "New York Giants",
-      "h2h": {
-        "odds": [
-          -200,
-          170
-        ]
-      },
-      "spreads": {
-        "odds": [
-          -110,
-          -110
-        ],
-        "points": [
-          "-4.0",
-          "4.0"
-        ]
-      },
-      "totals": {
-        "odds": [
-          -110,
-          -110
-        ],
-        "points": [
-          45.5,
-          45.5
-        ]
-      }
+      "h2h": {},
+      "spreads": {},
+      "totals": {}
     },
     "2020-12-22Cincinnati BengalsPittsburgh Steelers": {
       "gameTime": "2020-12-22",
@@ -11239,14 +11239,14 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       "away": "Pittsburgh Steelers",
       "h2h": {
         "odds": [
-          500,
-          -800
+          525,
+          -850
         ]
       },
       "spreads": {
         "odds": [
-          -120,
-          100
+          -115,
+          -105
         ],
         "points": [
           "13.0",
@@ -11255,8 +11255,8 @@ const EXAMPLE_FRONTEND_RESPONSE = {
       },
       "totals": {
         "odds": [
-          -110,
-          -110
+          -105,
+          -115
         ],
         "points": [
           40.5,
